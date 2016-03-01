@@ -21,6 +21,7 @@ def walk_tree():
                     if correct_clanname(file):
                         copy(os.path.join(root, file), output_dir)
 
+
 def correct_clanname(name):
     if ("_final.cha" in name or "newclan_merged.cha" in name)\
             and not name.startswith("."):
